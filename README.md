@@ -1,3 +1,3 @@
 # wsl setup
 
-Will  build and install neovim + install all necesary tools + fish
+Will  build and install neovim, bazel and all necesary tools + fish
