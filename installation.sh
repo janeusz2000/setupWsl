@@ -35,6 +35,8 @@ sudo npm install -g neovim
 
 # Python
 sudo apt install python3-pip
+pip3 install neovim
+pip3 install pynvim --upgrade
 
 # C++
 echo "installing C++ tools"
