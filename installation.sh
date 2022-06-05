@@ -34,13 +34,14 @@ sudo npm install --save-dev coc.nvim
 sudo npm install -g neovim
 
 # Python
+sudo apt-get install python3
 sudo apt install python3-pip
 pip3 install neovim
 pip3 install pynvim --upgrade
 
 # C++
 echo "installing C++ tools"
-sudo apt-get install llvm gcc -y
+sudo apt-get install llvm gcc clang -y
 
 # install lua for neovim tools
 echo "Installing lua..."
@@ -50,7 +51,7 @@ echo "Lua istallation ended"
 
 echo "Building and installing neovim"
 rm ~/neovimTemp -r -d
-sudo apt-get install git
+sudo apt-get install git 
 mkdir ~/neovimTemp
 cd ~/neovimTemp
 git clone https://github.com/neovim/neovim.git
@@ -83,6 +84,9 @@ mkdir ~/.temp/nvim/undodir
 
 nvim --headless +PlugInstall +qall
 echo "Building and installing neovim ended"
+
+# neovim tool requirements
+sudo apt-get install ripgrep
 
 echo "Restart required"
 exit
