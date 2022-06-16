@@ -35,7 +35,7 @@ sudo npm install -g neovim
 
 # Python
 sudo apt-get install python3
-sudo apt install python3-pip
+sudo apt install python3-pip python3.8-venv
 pip3 install neovim
 pip3 install pynvim --upgrade
 
