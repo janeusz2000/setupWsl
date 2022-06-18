@@ -43,6 +43,9 @@ pip3 install pynvim --upgrade
 echo "installing C++ tools"
 sudo apt-get install llvm gcc clang -y
 
+# proftobuf for compile_commands.json
+sudo apt-get install protobuf-compiler python-protobuf
+
 # install lua for neovim tools
 echo "Installing lua..."
 sudo apt install lua5.3 -y
