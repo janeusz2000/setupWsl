@@ -85,8 +85,13 @@ mkdir ~/.temp
 mkdir ~/.temp/nvim
 mkdir ~/.temp/nvim/undodir
 
+# Install plugins on neovim
 nvim --headless +PlugInstall +qall
 echo "Building and installing neovim ended"
+
+# install language coc utilities
+nivm --headless +CocInstall coc-clangd coc-spell-checker coc-tsserver coc-pyright
+nvim --headless +CocCommand clangd.install
 
 # neovim tool requirements
 sudo apt-get install ripgrep
